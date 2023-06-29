@@ -15,7 +15,7 @@
             <!-- Header -->
                 <section id="header">
                     <!-- Logo -->
-                        <h1><a href="QaffasissusaaDA.html">Can you see?</a></h1>
+                        <h1><a href="QaffasissusaaDA.html">Takusinnaaviuk?</a></h1>
                         <a href="Qaffasissusaa.html"><img src="images/greenland.png" alt="" width="15px"></a> |
                         <a href="QaffasissusaaDA.html"><img src="images/denmark.png" alt="" width="15px"></a>
                     <!-- Nav -->
@@ -141,9 +141,9 @@
                     var long = 0;
                     //latitude in degrees, Birmingham UK
                     var lat = 0;
-                    if(Location === 'Nuuk'){long =-51.7373};
-                    if(Location === 'Nuuk'){lat =64.1743};
-                    if(Location === 'Tårup'){long =10.3402};
+                    if(Location === 'Nuuk'){long=-51.7373};
+                    if(Location === 'Nuuk'){lat=64.1743};
+                    if(Location === 'Tårup'){long=10.3402};
                     if(Location === 'Tårup'){lat =55.4071};
                     if(Location === 'Boston'){long =-71.0589};
                     if(Location === 'Boston'){lat =42.3601};
@@ -158,7 +158,7 @@
                         if (checkboxes[i].checked) {
                             all_objects.push(checkboxes[i].value);
                             if(checkboxes[i].value==="Andromedagalaksen"){
-                                all_radecs.push("0h42m44s +41s16m9s")
+                                all_radecs.push("0h42m44s +41d16m9s")
                             }
                             
                             if(checkboxes[i].value==="Håndvægtstågen"){
@@ -251,10 +251,9 @@
                     if(Location==='Tårup'){var utcoffset= 6};
                     if(Location==='Boston'){var utcoffset= 0};
                     
-                    
                     //var UT = 0.0 - utcoffset;
-                    var UTC_string = ["21:00","21:30","22:00","22:30","23:00","23:30","00:00","00:30","01:00","01:30","02:00","02:30","03:00"]
-                    var UTC = [21.0,21.5,22.0,22.5,23.0,23.5,0.0,0.5,1.0,1.5,2.0,2.5,3.0]
+                    var UTC_string = ["21:00","21:30","22:00","22:30","23:00","23:30","00:00","00:30","01:00","01:30","02:00","02:30","03:00","03:30","04:00","04:30","05:00"]
+                    var UTC = [21.0,21.5,22.0,22.5,23.0,23.5,0.0,0.5,1.0,1.5,2.0,2.5,3.0,4.0,4.5,5.0]
                     var UT = []
                     for (var i = 0; i < UTC.length; i++) {
                         var t = UTC[i]-utcoffset
@@ -263,7 +262,6 @@
                     }
                     
                     let total_text ="<h2>"+ Location + " </br>" + date + "</h2>"+"<ul>";
-                    
                     //!!!!Date!!!!//
                     var J2000 = new Date("01/01/2000 00:00");
                     
@@ -291,7 +289,6 @@
                         for (var j = 0; j < Difference_In_Days.length; j++) {
                             var LST = 100.46 + 0.985647 * Difference_In_Days[j] + long + 15*UT[j];
                             if (LST<0){LST+=360};
-                            
                             var ha= LST-RA;
                             if (ha<0){ha+=360};
                             var HA = toRadians(ha)
@@ -302,10 +299,6 @@
                             var Alt = Math.asin(sinAlt);
                             Alt_source.push(toDegrees(Alt).toFixed(1));
                         };
-                        
-                        //var alt_degree = parseFloat(Alt);
-                        //parseFloat(toDegrees(Alt)).toFixed(2)
-                        
                         
                         var observable = timesabovehorizon(UTC_string, Alt_source);
                         var max_degree = Alt_source.filter(abovehorizon);
