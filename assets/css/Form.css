@@ -1537,6 +1537,23 @@ input, select, textarea {
       resize: none;
     }
 
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form select,
+    form textarea {
+        background: #FFFFFF;
+        width:15em;
+    }
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus,
+        form input[type="password"]:focus,
+        form select:focus,
+        form textarea:focus {
+            background: #fff;
+        }
+
     .formbold-form-label {
         color: #000000;
         font-weight: 500;
