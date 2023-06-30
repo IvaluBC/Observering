@@ -15,7 +15,7 @@
             <!-- Header -->
                 <section id="header">
                     <!-- Logo -->
-                        <h1><a href="QaffasissusaaDA.html">Takusinnaaviuk?</a></h1>
+                        <h1><a href="Qaffasissusaa.html">Takusinnaaviuk?</a></h1>
                         <a href="Qaffasissusaa.html"><img src="images/greenland.png" alt="" width="15px"></a> |
                         <a href="QaffasissusaaDA.html"><img src="images/denmark.png" alt="" width="15px"></a>
                     <!-- Nav -->
@@ -32,7 +32,8 @@
                     <div id="main">
                         <div class="inner">
                             <p> Piareersarnermi ilaavoq misissorusutaq sumiiffinniik ersinnissaa. Sapinngisamik qilammi qullasissumi inissisimasariaqarpoq. Ataani Nuummiit (Kalaallit Nunaat), T&aringrup-miit (Danmark) imaluunniit Boston-miit (USA) takorusutat ersinnersoq.</p>
-                            
+                            </b>
+                            <p>Seqernup tarrereernerata missaaniik ersilissanersut takusinnaavat (ca. 21:00-miik 05:00-p tungaanut). </p>
                             <form class="radiobttn" name="Location_form" id="Location_form">
                               <h4> Suminngaanniik?? </h4>
                                 <input type="radio" id="Nuuk" name="Location" value="Nuuk">
@@ -48,12 +49,12 @@
                             <p> Suut takorusippigit? Arlalinnik toqqaasinnaavutit.</p>
                             <form class="checklist" name = "Object" id="Object">
                               <h4>Seqineqarfitsinni:</h4>
-                                <input type="checkbox" id="Måne" name="Object" value="Måne">
-                                <label for="Måne">M&aringne</label>
                                 <input type="checkbox" id="Mars" name="Object" value="Mars">
                                 <label for="Mars">Mars</label>
                                 <input type="checkbox" id="Jupiter" name="Object" value="Jupiter">
                                 <label for="Jupiter">Jupiter</label>
+                                <input type="checkbox" id="Saturn" name="Object" value="Saturn">
+                                <label for="Saturn">Saturn</label>
                               <h4>Qilaap Silliani (Galaksitsinni):</h4>
                                 <input type="checkbox" id="Håndvægtstågen" name="Object" value="Håndvægtstågen">
                                 <label for="Håndvægtstågen">H&aringndv&aeliggtst&aringgen</label>
@@ -148,102 +149,6 @@
                     if(Location === 'Boston'){long =-71.0589};
                     if(Location === 'Boston'){lat =42.3601};
                     
-                    
-                    
-                    //!!!!Object!!!!//
-                    var checkboxes = document.getElementsByName('Object');
-                    var all_objects =[];
-                    var all_radecs = [];
-                    for (var i = 0; i < checkboxes.length; i++) {
-                        if (checkboxes[i].checked) {
-                            all_objects.push(checkboxes[i].value);
-                            if(checkboxes[i].value==="Andromedagalaksen"){
-                                all_radecs.push("0h42m44s +41d16m9s")
-                            }
-                            
-                            if(checkboxes[i].value==="Håndvægtstågen"){
-                                all_radecs.push("19h59m35s +22d43m16s")
-                            }
-                            
-                            if(checkboxes[i].value==="Helixtågen"){
-                                all_radecs.push("22h29m39s -20d50m14s")
-                            }
-                            
-                            if(checkboxes[i].value==="Herkulestågen"){
-                                all_radecs.push("16h44m29.5s +23d47m59s")
-                            }
-                            
-                            if(checkboxes[i].value==="Lagunetågen"){
-                                all_radecs.push("18h3m37s -24d23m12s")
-                            }
-                            
-                            if(checkboxes[i].value==="Messier 15"){
-                                all_radecs.push("21h29m58s +12d10m1s")
-                            }
-                            
-                            if(checkboxes[i].value==="Messier 58"){
-                                all_radecs.push("12h37m43.5s +11d49m05s")
-                            }
-                            
-                            if(checkboxes[i].value==="Messier 81"){
-                                all_radecs.push("9h55m33s +69d3m55s")
-                            }
-                            
-                            if(checkboxes[i].value==="Messier 82"){
-                                all_radecs.push("9h55m52s +69d40m47s")
-                            }
-                            
-                            if(checkboxes[i].value==="Messier 87"){
-                                all_radecs.push("12h30m49s +12d23m28s")
-                            }
-
-                            if(checkboxes[i].value==="Messier 95"){
-                                all_radecs.push("10h43m57.7s +11d42m14s")
-                            }
-                            
-                            if(checkboxes[i].value==="Messier 101"){
-                                all_radecs.push("14h3m13s +54d20m57s")
-                            }
-                            
-                            if(checkboxes[i].value==="Malstrømsgalaksen"){
-                                all_radecs.push("13h29m53s +47d11m43s")
-                            }
-                            
-                            if(checkboxes[i].value==="NGC 4013"){
-                                all_radecs.push("11h58m31.13s +43d56m50.1s")
-                            }
-                            
-                            if(checkboxes[i].value==="NGC 4124"){
-                                all_radecs.push("12h15m39.2s +36d19m37s")
-                            }
-                            
-                            if(checkboxes[i].value==="Ørnetågen"){
-                                all_radecs.push("18h18m48s -13d49m0s")
-                            }
-                            
-                            if(checkboxes[i].value==="Ringtågen"){
-                                all_radecs.push("18h53m35s +33d1m45s")
-                            }
-                            
-                            
-                            if(checkboxes[i].value==="Sagittarius A"){
-                                all_radecs.push("17h45m40s -29d0m28s")
-                            }
-                            
-                            if(checkboxes[i].value==="Spiralgalaksen"){
-                                all_radecs.push("13h37m00.919s −29d51m56.74s")
-                            }
-                            
-                            if(checkboxes[i].value==="Trekantsgalaksen"){
-                                all_radecs.push("1h33m50s +30d39m37s")
-                            }
-                            
-                            if(checkboxes[i].value==="Trifidtågen"){
-                                all_radecs.push("18h2m23s -23d1m48s")
-                            }
-                            }
-                        }
-                    
                     //Time stuff
                     var date = document.getElementById("dob").value;
                     var utcoffset = 0
@@ -256,7 +161,7 @@
                     var UTC = [21.0,21.5,22.0,22.5,23.0,23.5,0.0,0.5,1.0,1.5,2.0,2.5,3.0,4.0,4.5,5.0]
                     var UT = []
                     for (var i = 0; i < UTC.length; i++) {
-                        var t = UTC[i]-utcoffset
+                        var t = UTC[i]+utcoffset
                         if(t<0){t +=24}
                         UT.push(t)
                     }
@@ -264,7 +169,7 @@
                     let total_text ="<h2>"+ Location + " </br>" + date + "</h2>"+"<ul>";
                     //!!!!Date!!!!//
                     var J2000 = new Date("01/01/2000 00:00");
-                    
+                    var year = date.split('-')[0];
                     
                     var Difference_In_Days = []
                     for (var i = 0; i < UTC_string.length; i++) {
@@ -274,6 +179,166 @@
                         Difference_In_Days.push(diff_days);
                     }
                     
+                    //!!!!Object!!!!//
+                    var checkboxes = document.getElementsByName('Object');
+                    var all_objects =[];
+                    var all_radecs = [];
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        if (checkboxes[i].checked) {
+                            all_objects.push(checkboxes[i].value);
+                            
+                            if(checkboxes[i].value==="Mars"){
+                                var obj = new coord();
+                                get_coord(obj, 3, Difference_In_Days[0]);
+                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Saturn"){
+                                var obj = new coord();
+                                get_coord(obj, 5, Difference_In_Days[0]);
+                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Jupiter"){
+                                var obj = new coord();
+                                get_coord(obj, 4, Difference_In_Days[0]);
+                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
+                            }
+                            
+                            
+                            
+                            
+                            
+                            if(checkboxes[i].value==="Andromedagalaksen"){
+                                ra = "0h42m44s"
+                                dec = Dectodegree("+41d16m9s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Håndvægtstågen"){
+                                ra = "19h59m35s"
+                                dec = Dectodegree("+22d43m16s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Helixtågen"){
+                                ra = "22h29m39s"
+                                dec = Dectodegree("-20d50m14s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Herkulestågen"){
+                                ra = "16h44m29.5s"
+                                dec = Dectodegree("+23d47m59s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Lagunetågen"){
+                                ra = "18h3m37s"
+                                dec = Dectodegree("-24d23m12s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Messier 15"){
+                                ra = "21h29m58s"
+                                dec = Dectodegree("+12d10m1s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Messier 58"){
+                                ra = "12h37m43.5s"
+                                dec = Dectodegree("+11d49m05s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Messier 81"){
+                                ra = "9h55m33s"
+                                dec = Dectodegree("+69d3m55s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Messier 82"){
+                                ra= "9h55m52s"
+                                dec = Dectodegree("+69d40m47s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Messier 87"){
+                                ra = "12h30m49s"
+                                dec = Dectodegree("+12d23m28s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+
+                            if(checkboxes[i].value==="Messier 95"){
+                                ra = "10h43m57.7s"
+                                dec = Dectodegree("+11d42m14s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Messier 101"){
+                                ra = "14h3m13s"
+                                dec = Dectodegree("+54d20m57s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Malstrømsgalaksen"){
+                                ra = "13h29m53s"
+                                dec = Dectodegree("+47d11m43s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="NGC 4013"){
+                                ra = "11h58m31.13s"
+                                dec = Dectodegree("+43d56m50.1s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="NGC 4124"){
+                                ra = "12h15m39.2s"
+                                dec = Dectodegree("+36d19m37s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Ørnetågen"){
+                                ra = "18h18m48s"
+                                dec = Dectodegree("-13d49m0s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Ringtågen"){
+                                ra = "18h53m35s"
+                                dec = Dectodegree("+33d1m45s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            
+                            if(checkboxes[i].value==="Sagittarius A"){
+                                ra = "17h45m40s"
+                                dec = Dectodegree("-29d0m28s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Spiralgalaksen"){
+                                ra = "13h37m00.919s"
+                                dec = Dectodegree("−29d51m56.74s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Trekantsgalaksen"){
+                                ra = "1h33m50s"
+                                dec = Dectodegree("+30d39m37s")
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Trifidtågen"){
+                                ra = "18h2m23s";
+                                dec = Dectodegree("-23d1m48s");
+                                all_radecs.push(ra+" "+dec)
+                            }
+                            }
+                        }
+                    
+                    
                     //Calculating the elevation of all sources at 21:00 UTC
                     var Alt_maximum = [];
                     var Alt_maximum_time = [];
@@ -281,7 +346,7 @@
                         var Alt_source = [];
                         Obj = all_objects[i]
                         RA = RAtodegree(all_radecs[i].split(' ')[0]);
-                        dec = Dectodegree(all_radecs[i].split(' ')[1]);
+                        dec = all_radecs[i].split(' ')[1];
                         //In radians
                         var LAT=toRadians(lat);
                         var DEC=toRadians(dec);
@@ -347,25 +412,314 @@
                 }
                 
                 
-                
                 function toDegrees(angle) {
                   return angle * (180 / Math.PI);
                 }
                 
                 function RAtodegree(RA) {
-                    hours = parseInt(RA.split("h")[0]);
+                    hours = parseInt(RA.split("h")[0]); //multiply by 15
                     mins = parseInt(RA.split("h")[1].split("m")[0]);
                     secs = parseInt(RA.split("h")[1].split("m")[1].split("s")[0]);
                     todegree = hours + (mins / 60) + (secs / 3600)
                     return todegree
                 }
                 function Dectodegree(RA) {
+                    
                     hours = parseInt(RA.split("d")[0]);
                     mins = parseInt(RA.split("d")[1].split("m")[0]);
                     secs = parseInt(RA.split("d")[1].split("m")[1].split("s")[0]);
                     todegree = hours + (mins / 60) + (secs / 3600)
                     return todegree
                 }
+                
+                var EPS  = 1.0e-12;                      // machine error constant
+
+                // right ascension, declination coordinate structure
+                function coord()
+                {
+                    ra   = parseFloat("0");              // right ascension [deg]
+                    dec  = parseFloat("0");              // declination [deg]
+                    rvec = parseFloat("0");              // distance [AU]
+                }
+
+                // altitude, azimuth coordinate structure
+                function horizon()
+                {
+                    alt = parseFloat("0");               // altitude [deg]
+                    az  = parseFloat("0");               // azimuth [deg]
+                }
+
+                // orbital element structure
+                function elem()
+                {
+                    a = parseFloat("0");                 // semi-major axis [AU]
+                    e = parseFloat("0");                 // eccentricity of orbit
+                    i = parseFloat("0");                 // inclination of orbit [deg]
+                    O = parseFloat("0");                 // longitude of the ascending node [deg]
+                    w = parseFloat("0");                 // longitude of perihelion [deg]
+                    L = parseFloat("0");                 // mean longitude [deg]
+                }
+
+                var pname = new Array("Mercury", "Venus  ", "Sun    ",
+                                      "Mars   ", "Jupiter", "Saturn ",
+                                      "Uranus ", "Neptune", "Pluto  ");
+                
+                function get_coord( obj, p, d )
+                {
+                    var planet = new elem();
+                    mean_elements(planet, p, d);
+                    var ap = planet.a;
+                    var ep = planet.e;
+                    var ip = planet.i;
+                    var op = planet.O;
+                    var pp = planet.w;
+                    var lp = planet.L;
+
+                    var earth = new elem();
+                    mean_elements(earth, 2, d);
+                    var ae = earth.a;
+                    var ee = earth.e;
+                    var ie = earth.i;
+                    var oe = earth.O;
+                    var pe = earth.w;
+                    var le = earth.L;
+                    
+                    // position of Earth in its orbit
+                    var me = mod2pi(le - pe);
+                    var ve = true_anomaly(me, ee);
+                    var re = ae*(1 - ee*ee)/(1 + ee*Math.cos(ve));
+                    
+                    // heliocentric rectangular coordinates of Earth
+                    var xe = re*Math.cos(ve + pe);
+                    var ye = re*Math.sin(ve + pe);
+                    var ze = 0.0;
+                    
+                    // position of planet in its orbit
+                    var mp = mod2pi(lp - pp);
+                    var vp = true_anomaly(mp, planet.e);
+                    var rp = ap*(1 - ep*ep)/(1 + ep*Math.cos(vp));
+                    
+                    // heliocentric rectangular coordinates of planet
+                    var xh = rp*(Math.cos(op)*Math.cos(vp + pp - op) - Math.sin(op)*Math.sin(vp + pp - op)*Math.cos(ip));
+                    var yh = rp*(Math.sin(op)*Math.cos(vp + pp - op) + Math.cos(op)*Math.sin(vp + pp - op)*Math.cos(ip));
+                    var zh = rp*(Math.sin(vp + pp - op)*Math.sin(ip));
+
+                    if (p == 2)                          // earth --> compute sun
+                    {
+                        xh = 0;
+                        yh = 0;
+                        zh = 0;
+                    }
+                    
+                    // convert to geocentric rectangular coordinates
+                    var xg = xh - xe;
+                    var yg = yh - ye;
+                    var zg = zh - ze;
+                    
+                    // rotate around x axis from ecliptic to equatorial coords
+                    var ecl = toRadians(23.439281);            //value for J2000.0 frame
+                    var xeq = xg;
+                    var yeq = yg*Math.cos(ecl) - zg*Math.sin(ecl);
+                    var zeq = yg*Math.sin(ecl) + zg*Math.cos(ecl);
+                    
+                    // find the RA and DEC from the rectangular equatorial coords
+                    obj.ra   = toDegrees(mod2pi(Math.atan2(yeq, xeq)));
+                    obj.dec  = toDegrees(Math.atan(zeq/Math.sqrt(xeq*xeq + yeq*yeq)));
+                }
+
+
+
+                // Compute the elements of the orbit for planet-i at day number-d
+                // result is returned in structure p
+                function mean_elements( p, i, d )
+                {
+                    var cy = d/36525;                    // centuries since J2000
+
+                    switch (i)
+                    {
+                    case 0: // Mercury
+                        p.a = 0.38709893 + 0.00000066*cy;
+                        p.e = 0.20563069 + 0.00002527*cy;
+                        p.i = toRadians(( 7.00487  -  23.51*cy/3600));
+                        p.O = toRadians(48.33167  - 446.30*cy/3600);
+                        p.w = toRadians(77.45645  + 573.57*cy/3600);
+                        p.L = mod2pi(toRadians((252.25084 + 538101628.29*cy/3600)));
+                        break;
+                    case 1: // Venus
+                        p.a = 0.72333199 + 0.00000092*cy;
+                        p.e = 0.00677323 - 0.00004938*cy;
+                        p.i = toRadians(3.39471 -   2.86*cy/3600);
+                        p.O = toRadians( 76.68069 - 996.89*cy/3600);
+                        p.w = toRadians(131.53298 - 108.80*cy/3600);
+                        p.L = mod2pi(toRadians((181.97973 + 210664136.06*cy/3600)));
+                        break;
+                    case 2: // Earth/Sun
+                        p.a = 1.00000011 - 0.00000005*cy;
+                        p.e = 0.01671022 - 0.00003804*cy;
+                        p.i = toRadians(  0.00005 -    46.94*cy/3600);
+                        p.O = toRadians(-11.26064 - 18228.25*cy/3600);
+                        p.w = toRadians(102.94719 +  1198.28*cy/3600);
+                        p.L = mod2pi(toRadians(100.46435 + 129597740.63*cy/3600));
+                        break;
+                    case 3: // Mars
+                        p.a = 1.52366231 - 0.00007221*cy;
+                        p.e = 0.09341233 + 0.00011902*cy;
+                        p.i = toRadians(  1.85061 -   25.47*cy/3600);
+                        p.O = toRadians( 49.57854 - 1020.19*cy/3600);
+                        p.w = toRadians(336.04084 + 1560.78*cy/3600);
+                        p.L = mod2pi(toRadians(355.45332 + 68905103.78*cy/3600));
+                        break;
+                    case 4: // Jupiter
+                        p.a = 5.20336301 + 0.00060737*cy;
+                        p.e = 0.04839266 - 0.00012880*cy;
+                        p.i = toRadians(  1.30530 -    4.15*cy/3600);
+                        p.O = toRadians(100.55615 + 1217.17*cy/3600);
+                        p.w = toRadians( 14.75385 +  839.93*cy/3600);
+                        p.L = mod2pi(toRadians(34.40438 + 10925078.35*cy/3600));
+                        break;
+                    case 5: // Saturn
+                        p.a = 9.53707032 - 0.00301530*cy;
+                        p.e = 0.05415060 - 0.00036762*cy;
+                        p.i = toRadians(  2.48446 +    6.11*cy/3600);
+                        p.O = toRadians(113.71504 - 1591.05*cy/3600);
+                        p.w = toRadians( 92.43194 - 1948.89*cy/3600);
+                        p.L = mod2pi(toRadians(49.94432 + 4401052.95*cy/3600));
+                        break;
+                    case 6: // Uranus
+                        p.a = 19.19126393 + 0.00152025*cy;
+                        p.e =  0.04716771 - 0.00019150*cy;
+                        p.i = toRadians(  0.76986  -    2.09*cy/3600);
+                        p.O = toRadians( 74.22988  - 1681.40*cy/3600);
+                        p.w = toRadians(170.96424  + 1312.56*cy/3600);
+                        p.L = mod2pi(toRadians(313.23218 + 1542547.79*cy/3600));
+                        break;
+                    case 7: // Neptune
+                        p.a = 30.06896348 - 0.00125196*cy;
+                        p.e =  0.00858587 + 0.00002510*cy;
+                        p.i = toRadians(  1.76917  -   3.64*cy/3600);
+                        p.O = toRadians(131.72169  - 151.25*cy/3600);
+                        p.w = toRadians( 44.97135  - 844.43*cy/3600);
+                        p.L = mod2pi(toRadians(304.88003 + 786449.21*cy/3600));
+                        break;
+                    case 8: // Pluto
+                        p.a = 39.48168677 - 0.00076912*cy;
+                        p.e =  0.24880766 + 0.00006465*cy;
+                        p.i = toRadians( 17.14175  +  11.07*cy/3600);
+                        p.O = toRadians(110.30347  -  37.33*cy/3600);
+                        p.w = toRadians(224.06676  - 132.25*cy/3600);
+                        p.L = mod2pi(toRadians(238.92881 + 522747.90*cy/3600));
+                        break;
+                    default:
+                        window.alert("function mean_elements() failed!");
+                    }
+                }
+
+
+                function true_anomaly( M, e )
+                {
+                    var V, E1;
+
+                    // initial approximation of eccentric anomaly
+                    var E = M + e*Math.sin(M)*(1.0 + e*Math.cos(M));
+
+                    do                                   // iterate to improve accuracy
+                    {
+                        E1 = E;
+                        E = E1 - (E1 - e*Math.sin(E1) - M)/(1 - e*Math.cos(E1));
+                    }
+                    while (Math.abs( E - E1 ) > EPS);
+
+                    // convert eccentric anomaly to true anomaly
+                    V = 2*Math.atan(Math.sqrt((1 + e)/(1 - e))*Math.tan(0.5*E));
+
+                    if (V < 0) V = V + (2*Math.PI);      // modulo 2pi
+                    
+                    return V;
+                }
+
+                // converts hour angle in degrees into hour angle string
+                function ha2str( x )
+                {
+                    var ra = x/15;                       // degrees to hours
+                    var h = Math.floor(ra);
+                    var m = Math.floor(60*(ra - h));
+                    var s = (3600*(ra - h - m)).toFixed(2);
+                    if(s<0){s=0.00};
+                    return h + "h" + m + "m"+s+"s";
+                }
+
+                
+
+                // return the integer part of a number
+                function abs_floor( x )
+                {
+                    var r;
+                    if (x >= 0.0) r = Math.floor(x);
+                    else          r = Math.ceil(x);
+                    return r;
+                }
+
+                // return an angle in the range 0 to 2pi radians
+                function mod2pi(x)
+                {
+                    var b = x/(2*Math.PI);
+                    var a = (2*Math.PI)*(b - abs_floor(b));
+                    if (a < 0) a = (2*Math.PI) + a;
+                    return a;
+                }
+
+                
+                function mean_sidereal_time( d, lon )
+                {
+                    var year   = d.getUTCFullYear();
+                    var month  = d.getUTCMonth() + 1;
+                    var day    = d.getUTCDate();
+                    var hour   = d.getUTCHours();
+                    var minute = d.getUTCMinutes();
+                    var second = d.getUTCSeconds();
+
+                    if ((month == 1)||(month == 2))
+                    {
+                        year  = year - 1;
+                        month = month + 12;
+                    }
+
+                    var a = Math.floor(year/100);
+                    var b = 2 - a + Math.floor(a/4);
+                    var c = Math.floor(365.25*year);
+                    var d = Math.floor(30.6001*(month + 1));
+
+                    // days since J2000.0
+                    var jd = b + c + d - 730550.5 + day
+                           + (hour + minute/60.0 + second/3600.0)/24.0;
+                    
+                    // julian centuries since J2000.0
+                    var jt = jd/36525.0;
+
+                    // mean sidereal time
+                    var mst = 280.46061837 + 360.98564736629*jd
+                            + 0.000387933*jt*jt - jt*jt*jt/38710000 + lon;
+
+                    if (mst > 0.0)
+                    {
+                        while (mst > 360.0)
+                            mst = mst - 360.0;
+                    }
+                    else
+                    {
+                        while (mst < 0.0)
+                            mst = mst + 360.0;
+                    }
+                        
+                    return mst;
+                }
+                // format two digits with leading zero if needed
+                function d2( n )
+                {
+                    if ((n < 0)||(99 < n)) return "xx";
+                    return (n < 10) ? ("0" + n) : n;
+                }
+                
                 
                 
             </script>
