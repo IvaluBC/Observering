@@ -99,6 +99,10 @@
                                 <label for="Andromedagalaksen"> Andromedagalaksen</label>
                                 <input type="checkbox" id="Malstrømsgalaksen" name="Object" value="Malstrømsgalaksen">
                                 <label for="Malstrømsgalaksen"> Malstr&oslashmsgalaksen</label>
+                                <p> Right ascension declination-ilu nammineq ikkukkit: </br>
+                                <input type="text" name="Ateq" id="Ateq" onfocus="this.value=''" value="Ateq"> <input type="text" name="RA" id="RA" onfocus="this.value=''" value="R.A."> <input type="text" name="DEC" id="DEC" onfocus="this.value=''" value="Dec">
+                                    </br>R.A.  10h50m13.3s Dec: +1d49m29.1s </p>
+                                    
                             </form>
                             
                             <form class="checklist" name = "Object" id="Object">
@@ -204,9 +208,6 @@
                                 get_coord(obj, 4, Difference_In_Days[0]);
                                 all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
                             }
-                            
-                            
-                            
                             
                             
                             if(checkboxes[i].value==="Andromedagalaksen"){
@@ -338,6 +339,15 @@
                             }
                         }
                     
+                    var selfinputName = document.getElementById("Ateq").value
+                    var selfinputRA = document.getElementById("RA").value
+                    var selfinputDEC = document.getElementById("DEC").value
+                    if(selfinputName!="Ateq"){
+                        all_objects.push(selfinputName)
+                        ra = selfinputRA;
+                        dec = Dectodegree(selfinputDEC);
+                        all_radecs.push(ra+" "+dec)
+                    }
                     
                     //Calculating the elevation of all sources at 21:00 UTC
                     var Alt_maximum = [];
