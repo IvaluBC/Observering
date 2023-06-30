@@ -152,16 +152,16 @@
                     //Time stuff
                     var date = document.getElementById("dob").value;
                     var utcoffset = 0
-                    if(Location==='Nuuk'){var utcoffset= 2};
-                    if(Location==='Tårup'){var utcoffset= 6};
-                    if(Location==='Boston'){var utcoffset= 0};
+                    if(Location==='Nuuk'){var utcoffset= -2};
+                    if(Location==='Tårup'){var utcoffset= +1};
+                    if(Location==='Boston'){var utcoffset= -4};
                     
                     //var UT = 0.0 - utcoffset;
                     var UTC_string = ["21:00","21:30","22:00","22:30","23:00","23:30","00:00","00:30","01:00","01:30","02:00","02:30","03:00","03:30","04:00","04:30","05:00"]
                     var UTC = [21.0,21.5,22.0,22.5,23.0,23.5,0.0,0.5,1.0,1.5,2.0,2.5,3.0,4.0,4.5,5.0]
                     var UT = []
                     for (var i = 0; i < UTC.length; i++) {
-                        var t = UTC[i]+utcoffset
+                        var t = UTC[i]-utcoffset
                         if(t<0){t +=24}
                         UT.push(t)
                     }
@@ -419,7 +419,7 @@
                     hours = parseInt(RA.split("h")[0]); //multiply by 15
                     mins = parseInt(RA.split("h")[1].split("m")[0]);
                     secs = parseInt(RA.split("h")[1].split("m")[1].split("s")[0]);
-                    todegree = hours + (mins / 60) + (secs / 3600)
+                    todegree = (hours + (mins / 60) + (secs / 3600))*15
                     return todegree
                 }
                 function Dectodegree(RA) {
