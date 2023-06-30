@@ -55,6 +55,8 @@
                                 <label for="Jupiter">Jupiter</label>
                                 <input type="checkbox" id="Saturn" name="Object" value="Saturn">
                                 <label for="Saturn">Saturn</label>
+                                <input type="checkbox" id="Pluto" name="Object" value="Pluto">
+                                <label for="Pluto">Pluto</label>
                               <h4>Qilaap Silliani (Galaksitsinni):</h4>
                                 <input type="checkbox" id="Håndvægtstågen" name="Object" value="Håndvægtstågen">
                                 <label for="Håndvægtstågen">H&aringndv&aeliggtst&aringgen</label>
@@ -197,18 +199,23 @@
                                 all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
                             }
                             
-                            if(checkboxes[i].value==="Saturn"){
-                                var obj = new coord();
-                                get_coord(obj, 5, Difference_In_Days[0]);
-                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
-                            }
-                            
                             if(checkboxes[i].value==="Jupiter"){
                                 var obj = new coord();
                                 get_coord(obj, 4, Difference_In_Days[0]);
                                 all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
                             }
                             
+                            if(checkboxes[i].value==="Saturn"){
+                                var obj = new coord();
+                                get_coord(obj, 5, Difference_In_Days[0]);
+                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Pluto"){
+                                var obj = new coord();
+                                get_coord(obj, 8, Difference_In_Days[0]);
+                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
+                            }
                             
                             if(checkboxes[i].value==="Andromedagalaksen"){
                                 ra = "0h42m44s"

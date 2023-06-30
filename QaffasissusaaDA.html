@@ -55,6 +55,8 @@
                                 <label for="Jupiter">Jupiter</label>
                                 <input type="checkbox" id="Saturn" name="Object" value="Saturn">
                                 <label for="Saturn">Saturn</label>
+                                <input type="checkbox" id="Pluto" name="Object" value="Pluto">
+                                <label for="Pluto">Pluto</label>
                               <h4>Qilaap Silliani (Galaksitsinni):</h4>
                                 <input type="checkbox" id="Håndvægtstågen" name="Object" value="Håndvægtstågen">
                                 <label for="Håndvægtstågen">H&aringndv&aeliggtst&aringgen</label>
@@ -101,7 +103,7 @@
                                 <label for="Malstrømsgalaksen"> Malstr&oslashmsgalaksen</label>
                                 <p> Right ascension declination-ilu nammineq ikkukkit: </br>
                                 <input type="text" name="Ateq" id="Ateq" onfocus="this.value=''" value="Ateq"> <input type="text" name="RA" id="RA" onfocus="this.value=''" value="R.A."> <input type="text" name="DEC" id="DEC" onfocus="this.value=''" value="Dec">
-                                    </br>R.A.  10h50m13.3s Dec: +1d49m29.1s </p>
+                                    </br>Soorlu: R.A.  10h50m13.3s Dec: +1d49m29.1s </p>
                                     
                             </form>
                             
@@ -197,18 +199,23 @@
                                 all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
                             }
                             
-                            if(checkboxes[i].value==="Saturn"){
-                                var obj = new coord();
-                                get_coord(obj, 5, Difference_In_Days[0]);
-                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
-                            }
-                            
                             if(checkboxes[i].value==="Jupiter"){
                                 var obj = new coord();
                                 get_coord(obj, 4, Difference_In_Days[0]);
                                 all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
                             }
                             
+                            if(checkboxes[i].value==="Saturn"){
+                                var obj = new coord();
+                                get_coord(obj, 5, Difference_In_Days[0]);
+                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
+                            }
+                            
+                            if(checkboxes[i].value==="Pluto"){
+                                var obj = new coord();
+                                get_coord(obj, 8, Difference_In_Days[0]);
+                                all_radecs.push(ha2str(obj.ra)+"  " + obj.dec)
+                            }
                             
                             if(checkboxes[i].value==="Andromedagalaksen"){
                                 ra = "0h42m44s"
