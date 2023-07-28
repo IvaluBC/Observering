@@ -3,6 +3,7 @@
 <html>
     <head>
         <!--<meta charset="utf-8" /> --->
+        <title>Kan du se dit objekt?</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/Form.css" />
@@ -15,27 +16,31 @@
             <!-- Header -->
                 <section id="header">
                     <!-- Logo -->
-                        <h1><a href="Qaffasissusaa.html">Takusinnaaviuk?</a></h1>
+                        <h1><a href="QaffasissusaaDA.html">Kan du se dit objekt?</a></h1>
                         <a href="Qaffasissusaa.html"><img src="images/greenland.png" alt="" width="15px"></a> |
                         <a href="QaffasissusaaDA.html"><img src="images/denmark.png" alt="" width="15px"></a>
                     <!-- Nav -->
                     <nav id="nav">
                         <ul>
-                            <li><a href="index.html">Saqqaa</a></li>
-                            <li class="current"><a href="Qaffasissusaa.html">Qinngusersornermut piareersarneq</a></li>
-                            <li><a href="CfATelescope.html">Qinngusersorneq</a></li>
-                            <li><a href="Assilissat.html">Assilisat piareersaruk</a></li>
-                            <!---<li><a href="Attavissat.html">Attavissat</a></li>--->
+                            <li><a href="indexDA.html">Forside</a></li>
+                            <li class="current"><a href="QaffasissusaaDA.html">Forberedelse til observering</a></li>
+                            <li><a href="CfATelescopeDA.html">Observer med teleskopet</a></li>
+                            <li><a href="AssilissatDA.html">Behandl dit billede</a></li>
                         </ul>
                     </nav>
                 
                     <div id="main">
                         <div class="inner">
-                            <p> Piareersarnermi ilaavoq misissorusutaq sumiiffinniik ersinnissaa. Sapinngisamik qilammi qullasissumi inissisimasariaqarpoq. Ataani Nuummiit (Kalaallit Nunaat), T&aringrup-miit (Danmark) imaluunniit Boston-miit (USA) takorusutat ersinnersoq.</p>
+                            <p>
+                            En del af forberedelsen er at undersøge om dit objekt kan ses på nattehimlen.
+                            Dit objekt skal helt være højt på himlen.
+                            Nedenunder kan du se om dit objekt kan ses fra Nuuk (Grønland), T&aringrup (Danmark) eller Boston (USA).</p>
                             </b>
-                            <p>Seqernup tarrereernerata missaaniik ersilissanersut takusinnaavat (ca. 21:00-miik 05:00-p tungaanut). </p>
+                            <p>
+                            Tidsrummet vil være efter Solen er gået ned (ca. 21:00 til 05:00).
+                            </p>
                             <form class="radiobttn" name="Location_form" id="Location_form">
-                              <h4> Suminngaanniik?? </h4>
+                              <h4> Hvor er du? </h4>
                                 <input type="radio" id="Nuuk" name="Location" value="Nuuk">
                                 <label for="Nuuk">Nuuk</label>
                                 <input type="radio" id="Tårup" name="Location" value="Tårup">
@@ -46,9 +51,9 @@
                             
                             </b>
                             
-                            <p> Suut takorusippigit? Arlalinnik toqqaasinnaavutit.</p>
+                            <p> Hvad vil du se? Du kan vælge flere.</p>
                             <form class="checklist" name = "Object" id="Object">
-                              <h4>Seqineqarfitsinni:</h4>
+                              <h4>I Solsystemet:</h4>
                                 <input type="checkbox" id="Mars" name="Object" value="Mars">
                                 <label for="Mars">Mars</label>
                                 <input type="checkbox" id="Jupiter" name="Object" value="Jupiter">
@@ -57,13 +62,13 @@
                                 <label for="Saturn">Saturn</label>
                                 <input type="checkbox" id="Pluto" name="Object" value="Pluto">
                                 <label for="Pluto">Pluto</label>
-                              <h4>Qilaap Silliani (Galaksitsinni):</h4>
-                                <input type="checkbox" id="Håndvægtstågen" name="Object" value="Håndvægtstågen">
-                                <label for="Håndvægtstågen">H&aringndv&aeliggtst&aringgen</label>
+                              <h4>I Mælkevejen:</h4>
                                 <input type="checkbox" id="Helixtågen" name="Object" value="Helixtågen">
                                 <label for="Helixtågen">Helixt&aringgen</label>
                                 <input type="checkbox" id="Herkulestågen" name="Object" value="Herkulestågen">
                                 <label for="Herkulestågen">Herkulest&aringgen</label>
+                                <input type="checkbox" id="Håndvægtstågen" name="Object" value="Håndvægtstågen">
+                                <label for="Håndvægtstågen">H&aringndv&aeliggtst&aringgen</label>
                                 <input type="checkbox" id="Lagunetågen" name="Object" value="Lagunetågen">
                                 <label for="Lagunetågen">Lagunet&aringgen</label>
                                 <input type="checkbox" id="Messier 15" name="Object" value="Messier 15">
@@ -76,17 +81,17 @@
                                 <label for="Trifidtågen"> Trifidt&aringgen </label>
                                 <input type="checkbox" id="Ørnetågen" name="Object" value="Ørnetågen">
                                 <label for="Ørnetågen"> Ørnet&aringgen</label>
-                              <h4>Galaksit allallu:</h4>
-                                <input type="checkbox" id="Trekantsgalaksen" name="Object" value="Trekantsgalaksen">
-                                <label for="Trekantsgalaksen"> Trekantsgalaksen (Messier 33) </label>
+                              <h4>Udenfor Mælkevejen:</h4>
+                                <input type="checkbox" id="Andromedagalaksen" name="Object" value="Andromedagalaksen">
+                                <label for="Andromedagalaksen"> Andromedagalaksen</label>
+                                <input type="checkbox" id="Malstrømsgalaksen" name="Object" value="Malstrømsgalaksen">
+                                <label for="Malstrømsgalaksen"> Malstr&oslashmsgalaksen</label>
                                 <input type="checkbox" id="Messier 58" name="Object" value="Messier 58">
                                 <label for="Messier 58"> Messier 58 </label>
                                 <input type="checkbox" id="Messier 81" name="Object" value="Messier 81">
                                 <label for="Messier 81"> Messier 81</label>
                                 <input type="checkbox" id="Messier 82" name="Object" value="Messier 82">
                                 <label for="Messier 82"> Messier 82</label>
-                                <input type="checkbox" id="Spiralgalaksen" name="Object" value="Spiralgalaksen">
-                                <label for="Spiralgalaksen"> Spiralgalaksen Messier 83</label>
                                 <input type="checkbox" id="Messier 87" name="Object" value="Messier 87">
                                 <label for="Messier 87"> Messier 87</label>
                                 <input type="checkbox" id="Messier 95" name="Object" value="Messier 95">
@@ -95,25 +100,25 @@
                                 <label for="Messier 101"> Messier 101</label>
                                 <input type="checkbox" id="NGC 4013" name="Object" value="NGC 4013">
                                 <label for="NGC 4013"> NGC 4013</label>
-                                <input type="checkbox" id="NGC 4124" name="Object" value="NGC 4124">
-                                <label for="NGC 4124"> NGC 4124</label>
-                                <input type="checkbox" id="Andromedagalaksen" name="Object" value="Andromedagalaksen">
-                                <label for="Andromedagalaksen"> Andromedagalaksen</label>
-                                <input type="checkbox" id="Malstrømsgalaksen" name="Object" value="Malstrømsgalaksen">
-                                <label for="Malstrømsgalaksen"> Malstr&oslashmsgalaksen</label>
-                                <p> Right ascension declination-ilu nammineq ikkukkit: </br>
-                                <input type="text" name="Ateq" id="Ateq" onfocus="this.value=''" value="Ateq"> <input type="text" name="RA" id="RA" onfocus="this.value=''" value="R.A."> <input type="text" name="DEC" id="DEC" onfocus="this.value=''" value="Dec">
-                                    </br>Soorlu: R.A.  10h50m13.3s Dec: +1d49m29.1s </p>
+                                <input type="checkbox" id="Spiralgalaksen" name="Object" value="Spiralgalaksen">
+                                <label for="Spiralgalaksen"> Spiralgalaksen Messier 83</label>
+                                <input type="checkbox" id="Trekantsgalaksen" name="Object" value="Trekantsgalaksen">
+                                <label for="Trekantsgalaksen"> Trekantsgalaksen </label>
+                                <p> Tilføj selv Right ascension og declination: </br>
+                                <input type="text" name="Navn" id="Navn" onfocus="this.value=''" value="Navn">
+                                    <input type="text" name="RA" id="RA" onfocus="this.value=''" value="R.A.">
+                                    <input type="text" name="DEC" id="DEC" onfocus="this.value=''" value="Dec">
+                                </br>F.eks.: R.A. 10h50m13.3s Dec: +1d49m29.1s </p>
                                     
                             </form>
                             
                             <form class="checklist" name = "Object" id="Object">
-                            <h4>Ulloq mississuiffissaq:</h4>
+                            <h4>Dag, du vil observere:</h4>
                             <label for="dob" class="formbold-form-label"> </label>
                             <input type="date" name="dob" id="dob"  class="formbold-form-input" />
                             </form>
                             <div>
-                                <input type="button" value="Takujuk" onclick="getValue()"/>
+                                <input type="button" value="Se" onclick="getValue()"/>
                             </div>
                             <div>
                                 <p id="total_text"></p>
@@ -301,12 +306,6 @@
                                 all_radecs.push(ra+" "+dec)
                             }
                             
-                            if(checkboxes[i].value==="NGC 4124"){
-                                ra = "12h15m39.2s"
-                                dec = Dectodegree("+36d19m37s")
-                                all_radecs.push(ra+" "+dec)
-                            }
-                            
                             if(checkboxes[i].value==="Ørnetågen"){
                                 ra = "18h18m48s"
                                 dec = Dectodegree("-13d49m0s")
@@ -346,10 +345,10 @@
                             }
                         }
                     
-                    var selfinputName = document.getElementById("Ateq").value
+                    var selfinputName = document.getElementById("Navn").value
                     var selfinputRA = document.getElementById("RA").value
                     var selfinputDEC = document.getElementById("DEC").value
-                    if(selfinputName!="Ateq"){
+                    if(selfinputName!="Navn"){
                         all_objects.push(selfinputName)
                         ra = selfinputRA;
                         dec = Dectodegree(selfinputDEC);
